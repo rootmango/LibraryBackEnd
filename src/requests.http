@@ -1,0 +1,38 @@
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "title": "The Hobbit",
+  "author": "J. R. R. Tolkien",
+  "datePublished": "1937-09-21",
+  "isbn13": "9780261103283",
+  "language": "English",
+  "genre": "Fantasy",
+  "format": "Hardback",
+  "giftedBy": "Georgi Georgiev",
+  "lentStatus": "false"
+}
+
+###
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "title": "A Study In Scarlet",
+  "author": "Arthur Conan Doyle",
+  "datePublished": "1887-01-01",
+  "isbn13": "9780241952894",
+  "language": "English",
+  "genre": "Detective",
+  "format": "Paperback",
+  "giftedBy": "Ivan Ivanov",
+  "lentStatus": "true",
+  "lentTo": "Maria Marinova",
+  "dueDate": "2025-05-01"
+}
+
+###
+
+DELETE http://localhost:8080/2
+Content-Type: application/json
